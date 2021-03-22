@@ -13,8 +13,20 @@ const Routes = [
     component: lazy(() => import('../../views/Home'))
   },
   {
-    path: '/second-page',
-    component: lazy(() => import('../../views/SecondPage'))
+    path: '/gift-certificates',
+    component: lazy(() => import('../../views/GiftCertificatesList'))
+  },
+  {
+    path: '/clientes',
+    component: lazy(() => import('../../views/ClientList'))
+  },
+  {
+    path: '/configuracion',
+    component: lazy(() => import('../../views/SettingsPage'))
+  },
+  {
+    path: '/mi-perfil',
+    component: lazy(() => import('../../views/AccountSettings'))
   },
   {
     path: '/login',

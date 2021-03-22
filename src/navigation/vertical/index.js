@@ -1,4 +1,4 @@
-import { Mail, Home } from 'react-feather'
+import { Home, Gift, Users, Settings, UserX } from 'react-feather'
 
 export default [
   {
@@ -8,9 +8,29 @@ export default [
     navLink: '/home'
   },
   {
-    id: 'secondPage',
-    title: 'Second Page',
-    icon: <Mail size={20} />,
-    navLink: '/second-page'
+    id: 'giftcertificate',
+    title: 'Gift Certificates',
+    icon: <Gift size={20} />,
+    navLink: '/gift-certificates',
+    badge: 'success',
+    badgeText: '2'
+  },
+  {
+    id: 'client',
+    title: 'Clientes',
+    icon: <Users size={20} />,
+    navLink: '/clientes'
+  },
+  {
+    id: 'settings',
+    title: 'Configuración',
+    icon: <Settings size={20} />,
+    navLink: '/configuracion'
+  },
+  {
+    id: 'account',
+    title: 'Mi Perfil',
+    icon: <UserX size={20} />,
+    navLink: '/mi-perfil'
   }
 ]
