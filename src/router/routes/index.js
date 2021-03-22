@@ -1,7 +1,7 @@
 import { lazy } from 'react'
 
 // ** Document title
-const TemplateTitle = '%s - Vuexy React Admin Template'
+const TemplateTitle = '%s - Gift & Vouchers'
 
 // ** Default Route
 const DefaultRoute = '/home'
@@ -14,7 +14,15 @@ const Routes = [
   },
   {
     path: '/gift-certificates',
-    component: lazy(() => import('../../views/GiftCertificatesList'))
+    component: lazy(() => import('../../views/gift-certificates/GiftCertificatesList'))
+  },
+  {
+    path: '/pendientes-de-pago',
+    component: lazy(() => import('../../views/gift-certificates/GiftCertificatesUnpaid'))
+  },
+  {
+    path: '/vencidos',
+    component: lazy(() => import('../../views/gift-certificates/GiftCertificatesPassed'))
   },
   {
     path: '/clientes',
@@ -26,6 +34,10 @@ const Routes = [
   },
   {
     path: '/mi-perfil',
+    component: lazy(() => import('../../views/AccountSettings'))
+  },
+  {
+    path: '/modos-de-pago',
     component: lazy(() => import('../../views/AccountSettings'))
   },
   {

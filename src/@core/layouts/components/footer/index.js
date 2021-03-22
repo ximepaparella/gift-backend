@@ -6,14 +6,14 @@ const Footer = () => {
     <p className='clearfix mb-0'>
       <span className='float-md-left d-block d-md-inline-block mt-25'>
         COPYRIGHT © {new Date().getFullYear()}{' '}
-        <a href='https://1.envato.market/pixinvent_portfolio' target='_blank' rel='noopener noreferrer'>
-          Pixinvent
+        <a href='https://spabelgrano.com' target='_blank' rel='noopener noreferrer'>
+          Spa Belgrano
         </a>
-        <span className='d-none d-sm-inline-block'>, All rights Reserved</span>
+        <span className='d-none d-sm-inline-block'>. Todos los derechos reservados</span>
       </span>
       <span className='float-md-right d-none d-md-block'>
         Hand-crafted & Made with
-        <Heart size={14} />
+        <Heart size={14} /> . Estudio equis.
       </span>
     </p>
   )
