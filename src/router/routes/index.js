@@ -34,11 +34,11 @@ const Routes = [
   },
   {
     path: '/mi-perfil',
-    component: lazy(() => import('../../views/AccountSettings'))
+    component: lazy(() => import('../../views/account-settings/index'))
   },
   {
     path: '/modos-de-pago',
-    component: lazy(() => import('../../views/AccountSettings'))
+    component: lazy(() => import('../../views/account-settings/index'))
   },
   {
     path: '/login',
